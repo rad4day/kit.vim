@@ -76,6 +76,7 @@ let syntax_groups = {
       \"Comment"      : {"guifg": foreground_color[4], "gui": "italic"},
       \"Underlined"   : {"guifg": kit_exclusive_green[1]},
       \"Constant"     : {"guifg": kit_lila[1]},
+      \"BlameLineNvim": {"guifg": kit_yellow[1]},
       \"String"       : {"guifg": kit_cyan_blue[3]},
       \"Identifier"   : {"guifg": kit_exclusive_green[2], "gui": "italic"},
       \"Function"     : {"guifg": kit_exclusive_blue[1]},
@@ -91,6 +92,13 @@ let syntax_groups = {
 let line_nr_groups = {
       \"SignColumn" : {"guifg": kit_red[1], "guibg": background_color[4]},
       \"LineNr" : {"guifg": foreground_color[2], "guibg": background_color[4]},
+\}
+
+let coc_groups = {
+      \"CocErrorSign" : {"guifg": kit_red[0], "guibg": background_color[4]},
+      \"CocWarningSign" : {"guifg": kit_yellow[0],"guibg": background_color[4]},
+      \"CocInfoSign" : {"guifg": kit_red[0],"guibg": background_color[4]},
+      \"CocHintSign" : {"guifg": kit_cyan_blue[0],"guibg": background_color[4]},
 \}
 
 let gui_element_groups = {
@@ -113,3 +121,4 @@ call ApplyGroup(line_nr_groups)
 call ApplyGroup(gui_element_groups)
 call ApplyGroup(pmenu_groups)
 call ApplyGroup(misc_groups)
+call ApplyGroup(coc_groups)
