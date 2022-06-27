@@ -85,6 +85,7 @@ let syntax_groups = {
       \"PreProc"      : {"guifg": kit_exclusive_green[0]},
       \"Type"         : {"guifg": kit_exclusive_blue[0], "gui": "italic"},
       \"StorageClass" : {"guifg": kit_exclusive_blue[1], "gui": "italic,bold"},
+      \"Folded"       : {"guifg": kit_exclusive_green[2],  "guibg": background_color[4]},
 \}
 
 let line_nr_groups = {
