@@ -95,9 +95,8 @@ let line_nr_groups = {
 \}
 
 let coc_groups = {
-      \"CocErrorSign" : {"guifg": kit_red[0], "guibg": background_color[4]},
-      \"CocWarningSign" : {"guifg": kit_yellow[0],"guibg": background_color[4]},
-      \"CocInfoSign" : {"guifg": kit_red[0],"guibg": background_color[4]},
+      \"CocErrorSign" : {"guibg": kit_red[0], "guifg": "White"},
+      \"CocWarningSign" : {"guibg": kit_yellow[0],"guifg": "Black"},
       \"CocHintSign" : {"guifg": kit_cyan_blue[0],"guibg": background_color[4]},
 \}
 
@@ -122,3 +121,4 @@ call ApplyGroup(gui_element_groups)
 call ApplyGroup(pmenu_groups)
 call ApplyGroup(misc_groups)
 call ApplyGroup(coc_groups)
+highlight! link CocInfoSign SignColumn
